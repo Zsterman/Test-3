@@ -1,0 +1,30 @@
+what happens when you type in a Link? (http://google.com/some/page.html)
+
+1. turn 'google.com' into its individual IP address
+2. connect to that IP address
+3. assign the Port to default (80) or whatever is listed in the Link
+4. use the HTTP protocol to ask for '/some/page.html'
+
+--------------------------------------------------------------------------------------
+
+how does the web work?
+
+using a metaphor, i would consider a ROAD system a great way to visualize and understand how the web works. 
+
+there are high speed interstates that connect all the secondary and local roads around the country. each house has a driveway that connects it to the vast road network and there is a consistent naming convention for these roads (N-S roads have odd numbers, and E-W roads have even numbers).
+
+no one entity is responsible for managing the road networks, and all types of vehicles can use the road. trucks (streaming music), cars (email), and buses (video), can all use the same medium yet contain different data.
+
+when a link is closed via accident OR construction, traffic can be routed to use an alternative path to reach its destination; new roads can be added and easily integrated into the system to further this process.
+
+--------------------------------------------------------------------------------------
+
+the internet is a really big network of interconnected computers, that is made up of a vast amount of smaller "local' networks. our computers communicate via this network to contact servers, which hold the information or websites in which we would like to communicate with. this information is exchanged in the form of 'packets', which within the packet is information that is sent into thousands of small chunks. they are sometimes inevitably corrupted, and it is more stable and easy to replace the small chunks when this happens, instead of the file in its entirety.
+
+our public browser checks multiple places before it resorts to the root DNS server for the information in which we need, in order of - 
+
+1.our local DNS cache
+2.the local Router DNS
+3.the IPS's DNS
+
+if finally it has not found the websites information, it crosses the interwebs into the source or ROOT DNS server, and reports back to our local browser, for some fun web surfin'
